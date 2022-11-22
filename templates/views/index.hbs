@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    {{>navbar}}
+
+    
+
+
+
+    <div class="container">
+        <div class="introduce">
+            <h1>PROJECT-HUB</h1>
+            <p>~By Mr. Keshab Das</p>
+            <button id="whiteman">Projects</button>
+            <button id="whiteman2">Github</button>
+        </div>
+        <div class="imgsection"><img src="images/font.svg" alt="" srcset=""></div>
+    </div>
+
+    <div class="pro-pro"><h3>PROJECTS</h3></div>
+    <div class="pro-con">
+        <div class="project-img"><a href="www.google.com"><img src="images/pro2.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="www.google.com"><img src="images/pro.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="www.google.com"><img src="images/pro3.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="www.google.com"><img src="images/pro4.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="www.google.com"><img src="images/pro5.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="www.google.com"><img src="images/pro6.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="https://keshab1113.github.io/Drum_Kit/"><img src="images/pro9.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="https://keshab1113.github.io/Update-Weather/"><img src="images/pro7.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="https://keshab1113.github.io/T.D._Educare/"><img src="images/pro8.png" alt="" srcset=""></a></div>
+        <div class="project-img"><a href="https://keshab1113.github.io/LoversCalculator/"><img src="images/pro10.png" alt="" srcset=""></a></div>
+    </div>
+    
+
+    <footer class="foot">
+        <p>This website is made by Keshab Das. Don't Copy &copy This</p>
+    </footer>
+
+
+</body>
+
+<script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item)=>
+    item.addEventListener('click',activeLink));
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
